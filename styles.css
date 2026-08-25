@@ -9,14 +9,24 @@ body {
 
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 10px 40px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    box-sizing: border-box;
+}
+
+.logo-header {
+    grid-column: 2;
+    text-align: center;
+}
+
+header nav {
+    justify-self: end;
 }
 
 header nav a {
@@ -70,9 +80,13 @@ header nav a:hover {
 }
 
 #seccion-dividida h2 {
-    font-size: 50px;
-    color: #28373c;
-    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 4px;
+    margin-top: 80px;
+    text-align: center;
 }
 
 #marcas {
