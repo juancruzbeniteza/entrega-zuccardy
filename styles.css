@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+}
+
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #28373c;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+.contenedor-chico {
+    width: 800px;
+    margin: auto;
+}
+
+.texto-invertido {
+    color: white;
+}
+
+.titulo-importante {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.boton {
+    background-color: #91b7c2;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    color: #28373c;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#seccion-dividida {
+    height: 100vh;
+    background-image: url("img/fondo-home.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#seccion-dividida h2 {
+    font-size: 50px;
+    color: #28373c;
+    letter-spacing: 2px;
+}
+
+#marcas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+}
+
+#marcas img {
+    max-width: 100%;
+    margin: 0px 20px;
+    border: 1px solid #0000001d;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px 5px #0000001d;
+}
+
+.flecha-bajar {
+    font-size: 40px;
+    color: #28373c;
+    text-decoration: none;
+}
+
+
+#seccion-nos {
+    background-image: url("img/fondo-uvas.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#seccion-nos .nos-parte {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0px;
+    width: 800px;
+    margin: auto;
+}
+
+#seccion-nos .nos-parte > div {
+    flex: 1;
+}
+
+#seccion-nos .nos-parte > div * {
+    margin: 10px 0px;
+}
+
+#seccion-nos hr {
+    width: 20%;
+}
+
+#seccion-nos img {
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 40px 40px #4e5c53;
+}
+
+
+#seccion-fund {
+    background-color: #91b7c2;
+    padding: 40px 0px;
+}
+
+#seccion-fund > img {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+#seccion-fund .contenedor-chico {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    width: 200px;
+    background-color: #28373c;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+#seccion-fund .derecha {
+    background-image: url("img/noticia-rse.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 20px;
+    color: white;
+}
+
+#seccion-fund article {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+#otras-noticias-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    color: rgb(220, 220, 220);
+}
+
+#otras-noticias-container div {
+    margin-top: auto;
+}
+
+#otras-noticias-container .active {
+    color: white;
+}
+
+#otras-noticias-container div:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+#seccion-contacto {
+    background-color: #28373c;
+    padding: 40px 0px;
+}
+
+#seccion-contacto .contenedor-chico > div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#seccion-contacto .contenedor-chico > div > * {
+    flex: 1;
+}
+
+#mapa {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+#seccion-contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+#seccion-contacto input,
+#seccion-contacto textarea {
+    padding: 8px;
+    margin: 5px 0px 15px 0px;
+    border: none;
+    border-radius: 3px;
+}
+
+#seccion-contacto .contenedor-chico > .boton {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#contacto-detalle:hover {
+    background-color: #304147;
+    transition: ease-in-out 100ms;
+}
+
+
+footer {
+    background-color: #2d373d;
+}
+
+footer .contenedor-chico {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+    font-size: 12px;
+}
+
+#logo-footer {
+    width: 80px;
+}
+
+
+.flecha-bajar:hover {
+    transform: translateY(8px);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
+        cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #a8c9d3;
+}
+
+/* probe hacer que la flecha rebote sola con keyframes pero no me salio, lo dejo asi por ahora
+@keyframes rebote {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(10px); }
+}
+*/
+
+
